@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cultural Events | ABC College Fest 2025</title>
+  <link rel="stylesheet" href="fest-style.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f5f5f5;
+      font-family: 'Segoe UI', sans-serif;
+    
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center; 
+      margin-bottom: 40px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #ffcc00;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ffdb58;
+    } 
+    header a button{
+      background-color: red;
+      font-size: 20px;
+      border-radius: 17px;
+     
+    }
+
+    .highlight {
+      color: #ffdb58;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 30px;
+      justify-content: center; 
+      animation: fadeIn 3s ease-out;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 2px solid #ffcc00;
+      border-radius: 15px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+      transition: transform 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      animation: slideIn 1s ease-out;
+    }
+
+    .card h3 {
+      color: #ffcc00;
+      font-size: 1.5em;
+    }
+
+    .card p {
+      font-size: 1em;
+      color: #e0e0e0;
+    }
+
+    .video-container {
+      margin-top: 50px;
+      text-align: center;
+      animation: fadeIn 4s ease-out;
+    }
+
+    .video-container iframe {
+      width: 80%;
+      height: 400px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 0 10px #ffcc00;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #aaa;
+      animation: fadeIn 5s ease-out;
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    /* Moving Background Animation */
+    .moving-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('images/kerala-culture.jpg') repeat-x;
+      animation: moveBackground 10s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes moveBackground {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 100% 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="moving-background"></div>
+
+  <header>
+    <h1>Cultural Events</h1>
+    <p>Experience the vibrant traditions of Kerala at <span class="highlight">ABC College Fest 2025</span></p>
+    <a href="fest.html"><button> Go to home</button> </a>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/08/d3/06/kathakali.jpg?w=1200&h=1200&s=1" alt="Kathakali">
+      <h3>Kathakali</h3>
+      <p>Witness the grand storytelling through elaborate costumes and expressive dance-drama.</p>
+    </div>
+    <div class="card">
+      <img src="https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Fmobile%2Fmohiniyattam-1723022602_26cdae1f40c339b47399.webp&w=3840&q=75" alt="Mohiniyattam">
+      <h3>Mohiniyattam</h3>
+      <p>Delicate and graceful dance form depicting feminine beauty and love.</p>
+    </div>
+    <div class="card">
+      <img src="https://www.india-tours.com/images/festivals/theyyam-festival-kerala/theyyam1.jpg" alt="Theyyam">
+      <h3>Theyyam</h3>
+      <p>Ritualistic dance honoring deities with vibrant costumes and energetic performances.</p>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNUgIEsTgD6clOTPFxAwagVmiBMMm7ftNgOQ&s" alt="Ottanthullal">
+      <h3>Ottanthullal</h3>
+      <p>Comic storytelling through dance and music, offering satire and entertainment.</p>
+    </div>
+    <div class="card">
+      <img src="images/poothamkali.jpg" alt="Poothamkali">
+      <h3>Poothamkali</h3>
+      <p>Folk dance performed during temple festivals, depicting mythological stories.</p>
+    </div>
+    <div class="card">
+      <img src="https://live.staticflickr.com/2874/13854208804_1c863067b4_c.jpg" alt="Velakali">
+      <h3>Velakali</h3>
+      <p>Martial dance form portraying battles from Mahabharata with swordplay.</p>
+    </div>
+  </section>
+
+  <div class="video-container">
+    <h2

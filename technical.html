@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Events | ABC College Fest 2025</title>
+  <link rel="stylesheet" href="fest-style.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f5f5f5;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header a{
+      color: #e0e0e0;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #00ffff;
+    }
+
+    .highlight {
+      color: #ffdb58;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 2px solid #00ffff;
+      border-radius: 15px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #00ffff;
+    }
+
+    .card p {
+      font-size: 1em;
+      color: #e0e0e0;
+    }
+
+    .video-container {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .video-container iframe {
+      width: 80%;
+      height: 400px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Technical Events</h1>
+    <p>Explore the future of innovation at <span class="highlight">ABC College Fest 2025</span></p>
+    <a href="index.html" class="back-button">Back to Home</a>
+    
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <img src="images/hackathon.jpg" alt="Hackathon">
+      <h3>Hackathon</h3>
+      <p>Build innovative solutions in 24 hours. Compete in teams to solve real-world problems.</p>
+    </div>
+    <div class="card">
+      <img src="images/coding.jpg" alt="Coding Challenge">
+      <h3>Coding Challenge</h3>
+      <p>Test your algorithm skills under pressure. Compete with the brightest coders.</p>
+    </div>
+    <div class="card">
+      <img src="images/robotics.jpg" alt="Robotics">
+      <h3>Robotics</h3>
+      <p>Showcase your bots in exciting obstacle races and automated missions.</p>
+    </div>
+    <div class="card">
+      <img src="images/quiz.jpg" alt="Tech Quiz">
+      <h3>Tech Quiz</h3>
+      <p>A battle of brains and buzzers. Tech, gadgets, science – all in one place.</p>
+    </div>
+  </section>
+
+  <div class="video-container">
+    <h2>Promo Video</h2>
+    <iframe src="https://youtu.be/LlqqM1a1GQI?si=5FypyqBHPjlwSVHM" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ABC College. All rights reserved.</p>
+  </footer>
+  <script>
+    const gearIcon = document.createElement("img");
+    gearIcon.src = "images/gear-icon.png"; // Add this gear image to /images
+    gearIcon.alt = "Gear Icon";
+    gearIcon.style.position = "fixed";
+    gearIcon.style.bottom = "40px";
+    gearIcon.style.right = "40px";
+    gearIcon.style.width = "80px";
+    gearIcon.style.animation = "spinGear 6s linear infinite";
+    document.body.appendChild(gearIcon);
+  
+    const gearStyle = document.createElement("style");
+    gearStyle.textContent = `
+      @keyframes spinGear {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    `;
+    document.head.appendChild(gearStyle);
+  </script>
+  
+
+</body>
+</html>

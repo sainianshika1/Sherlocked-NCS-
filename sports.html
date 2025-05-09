@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sports Events | ABC College Fest 2025</title>
+  <link rel="stylesheet" href="fest-style.css">
+  <style>
+    body {
+      background: #FEDE00;
+      color: #0A7029;
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #0A7029;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #0A7029;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #0A7029;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #DBE8D8;
+      border: 2px solid #DBE8D8;
+      border-radius: 15px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(255, 235, 59, 0.5);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #0A7029;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #0A7029;
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    /* Floating boat animation */
+    .floating-boat {
+      position: fixed;
+      bottom: 20px;
+      left: -150px;
+      animation: floatBoat 10s ease-in-out infinite;
+      z-index: 999;
+    }
+
+    @keyframes floatBoat {
+      0% {
+        left: -150px;
+      }
+      50% {
+        left: 50%;
+        transform: translateX(-50%) rotate(15deg);
+      }
+      100% {
+        left: 110%;
+      }
+    }
+
+    /* Floating kalaripayattu animation */
+    .floating-martial-arts {
+      position: fixed;
+      bottom: 150px;
+      left: -200px;
+      animation: floatMartialArts 10s ease-in-out infinite;
+      z-index: 999;
+    }
+
+    @keyframes floatMartialArts {
+      0% {
+        left: -200px;
+      }
+      50% {
+        left: 50%;
+        transform: translateX(-50%) rotate(-15deg);
+      }
+      100% {
+        left: 110%;
+      }
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ffeb3b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sports Events</h1>
+    <p>Experience the rich sports culture  at Kerela College Fest 2025!</p>
+    <a href="technical.html" class="back-button">Back to Home</a>
+  </header>
+
+  <!-- Floating Boat Animation -->
+  <img src="images/vallam-kali-boat.png" alt="Vallam Kali Boat" class="floating-boat" />
+
+  <!-- Floating Martial Arts Animation -->
+  <img src="images/kalaripayattu.png" alt="Kalaripayattu Martial Arts" class="floating-martial-arts" />
+
+  <section>
+    <h2 class="highlight">Featured Sports Events</h2>
+    <div class="grid">
+
+      <!-- football -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vdGJhbGx8ZW58MHx8MHx8fDA%3D">
+        <h3>Football</h3>
+        <p> </p>
+        <p>a game played by two teams of 11 players on a rectangular field 100 yards long; teams try to 
+          get possession of the ball and advance it across the opponents goal line in a series of (running or passing) 
+          plays.</p>
+          <p><strong>Date:</strong> March 14th</p>
+        <p><strong>Time:</strong> 9:00 AM</p>
+      </div>
+
+      <!-- cricket-->
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS-KZCSJBv0GR5K5zqzSdBCQ_mCITLRP6sWw&s" alt="Kalaripayattu Martial Arts">
+        <h3>Cricket</h3>
+        <p> Cricket is a contest between two teams, each consisting of eleven players. The game incorporates batting, bowling, and fielding</p>
+        <p><strong>Date:</strong> March 14th</p>
+        <p><strong>Time:</strong> 12:00 PM</p>
+      </div>
+
+      <!-- Traditional Kerala Sports Card -->
+      <div class="card">
+        <img src="https://images.crazygames.com/cricket-superstar-league_16x9/20250407071252/cricket-superstar-league_16x9-cover?auto=format,compress&q=75&cs=strip" alt="Traditional Kerala Sports">
+        <h3>Athletics</h3>
+        <p> Relay, Track, Lane, Photo Finish, Hurdles, Shot Put, Discuss Throw, Hammer Throw,
+           High Jump, Triple Jump Cross Country, etc.</p>
+        <p><strong>Date:</strong> March 14th</p>
+        <p><strong>Time:</strong> 3:00 PM</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ABC College Fest. Designed with love and tradition. <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <!-- Add the JavaScript for floating images -->
+  <script>
+    // Floating boat animation
+    const boat = document.querySelector(".floating-boat");
+    boat.style.animation = "floatBoat 10s ease-in-out infinite";
+    
+    // Floating martial arts animation
+    const martialArts = document.querySelector(".floating-martial-arts");
+    martialArts.style.animation = "floatMartialArts 10s ease-in-out infinite";
+  </script>
+
+</body>
+</html>
